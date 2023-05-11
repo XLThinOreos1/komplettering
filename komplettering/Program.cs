@@ -24,7 +24,7 @@ void NumberInputValidation()
     try
     {
         int UserInput = int.Parse(Console.ReadLine());
-        
+
         if (UserInput == RandomNumber)
         {
             AnswerGood = true;
@@ -33,6 +33,7 @@ void NumberInputValidation()
     catch
     {
         Console.WriteLine("That is not a valid input!\nTry again!");
+        Task.Delay(1000).Wait();
     }
 }
 
